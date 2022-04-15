@@ -81,13 +81,13 @@ const sortVideos = (vs) => Object.values(vs).sort(
   (v1, v2) => Date.parse(v2.release_date) - Date.parse(v1.release_date),
 );
 
-const hostname = "avfreex24.herokuapp.com"
+// const hostname = "avfreex24.herokuapp.com"
 
 let address = `${window.location.hostname}:${window.location.port}`;
 // const address = "avfreex24.herokuapp.com";
 
 if (process && process.env.NODE_ENV === 'development') {
-  address = `${hostname}:8081`;
+  address = `${window.location.hostname}:8081`;
 }
 
 const favourites = {

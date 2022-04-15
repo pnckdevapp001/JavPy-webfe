@@ -9,8 +9,8 @@ const socket = new WebSocket(`${wsProtocol}://${utils.address}/ws/`);
 const connectionEstablished = () => socket.readyState === 1;
 
 const connectionStatus = {
-  connected: true,
-  server: 'https://avfreex24.herokuapp.com',
+  connected: false,
+  server: '',
 };
 
 socket.onopen = () => {
