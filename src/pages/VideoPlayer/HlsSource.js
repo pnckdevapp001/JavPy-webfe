@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Hls from 'hls.js';
+//import Hls from 'cdnbye';
 
 export default class HLSSource extends Component {
   constructor(props, context) {
@@ -8,6 +9,7 @@ export default class HLSSource extends Component {
   }
 
   componentDidMount() {
+    
     // `src` is the property get from this component
     // `video` is the property insert from `Video` component
     // `video` is the html5 video element

@@ -58,16 +58,16 @@ export default () => {
         <SettingsIcon />
       </IconButton>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title" fullWidth>
-        <DialogTitle id="form-dialog-title">Configurations</DialogTitle>
+        <DialogTitle id="form-dialog-title">ตั้งค่า</DialogTitle>
         <DialogContent>
           {json ? <ReactJson src={json} onEdit={edit} onDelete={del} onAdd={add} theme="solarized" /> : <></>}
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>
-            Cancel
+            ยกเลิก
           </Button>
           <Button onClick={handleConfirm}>
-            Confirm
+            ยืนยัน
           </Button>
         </DialogActions>
       </Dialog>

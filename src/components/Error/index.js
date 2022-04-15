@@ -3,6 +3,6 @@ import Alert from '@material-ui/lab/Alert';
 
 export default () => (
   <Alert severity="error">
-    Sorry. Cannot find the requested resource.
+    เสียใจ. ไม่พบทรัพยากรที่ร้องขอ
   </Alert>
 );

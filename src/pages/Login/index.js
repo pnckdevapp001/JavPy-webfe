@@ -25,10 +25,10 @@ export default () => {
 
   const dialog = React.useMemo(() => (
     <Dialog open={open} onClose={handleProceed(input)}>
-      <DialogTitle>Login Required</DialogTitle>
+      <DialogTitle>จำเป็นต้องเข้าสู่ระบบ</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          Leave it blank if you did not set a password.
+        เว้นว่างไว้หากคุณไม่ได้ตั้งรหัสผ่าน
         </DialogContentText>
         <TextField
           autoFocus
@@ -43,7 +43,7 @@ export default () => {
       </DialogContent>
       <DialogActions>
         <Button onClick={handleProceed} color="secondary">
-          Proceed
+        ดำเนินการ
         </Button>
       </DialogActions>
     </Dialog>

@@ -72,19 +72,19 @@ export default (props) => {
             </Grid>
             <Grid item>
               <Typography variant="subtitle1" color="textSecondary">
-                Birthdate:
+                วันเกิด:
                 {formatDate(profile.birth_date)}
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="subtitle1" color="textSecondary">
-                Height:
+                สูง:
                 {profile.height}
               </Typography>
             </Grid>
             <Grid item>
               <Typography variant="subtitle1" color="textSecondary">
-                Weight:
+                น้ำหนัก:
                 {profile.weight}
               </Typography>
             </Grid>

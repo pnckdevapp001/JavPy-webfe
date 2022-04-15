@@ -47,8 +47,8 @@ export default () => {
         <Table aria-label="customized table" size="small">
           <TableHead>
             <TableRow>
-              <styles.StyledTableCell align="left">Total Size</styles.StyledTableCell>
-              <styles.StyledTableCell align="left">Magnet Link</styles.StyledTableCell>
+              <styles.StyledTableCell align="left">ขนาดทั้งหมด</styles.StyledTableCell>
+              <styles.StyledTableCell align="left">ลิงค์ดูดม้วบๆ</styles.StyledTableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -57,7 +57,7 @@ export default () => {
                 <styles.StyledTableCell align="left">{row.description}</styles.StyledTableCell>
                 <styles.StyledTableCell align="left">
                   <Button className="btn" size="small" color="secondary" data-clipboard-text={row.magnet}>
-                    COPY LINK
+                    คัดลอกลิ้งค์
                   </Button>
                 </styles.StyledTableCell>
               </styles.StyledTableRow>
